@@ -14,9 +14,37 @@ Font Size (p): 16px
 - Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
 - Weights: 500, 700, 900 */
 
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap');
+/* font-family: 'Red Hat Display', sans-serif; */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    background-color: hsl(225, 100%, 94%);
+    flex-flow: column wrap;
+    justify-content: center;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+}
+
+.card {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    width: auto;
+    height: auto%
+    margin: 0 auto;
+}
+
+.header-hero {
+    width: 100%;
+}
