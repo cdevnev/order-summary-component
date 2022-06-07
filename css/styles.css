@@ -6,16 +6,16 @@
 ### Neutral
 - Very pale blue: hsl(225, 100%, 98%)
 - Desaturated blue: hsl(224, 23%, 55%)
-- Dark blue: hsl(223, 47%, 23%)\
+- Dark blue: hsl(223, 47%, 23%)
 
 
 ### Font
 Font Size (p): 16px
 - Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
-- Weights: 500, 700, 900 */
+- Weights: 500, 700, 900
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap');
-/* font-family: 'Red Hat Display', sans-serif; */
+font-family: 'Red Hat Display', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -33,7 +33,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 16;
+    font-size: 16px;
 }
 
 img {
@@ -58,9 +58,10 @@ img {
     background-size: contain;
     border-radius: 20px;
     width: 80%;
-    min-width: 350px;
+    min-width: 22em;
     max-width: 80%;
     padding: 1.5em;
+    box-shadow: 0 1em 2em -1.4em hsl(224, 23%, 55%);
     /* min-height: 50%; */
 }
 
@@ -68,13 +69,32 @@ img {
     margin-top: 50%;
     margin-bottom: 2em;
     padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     height: auto;
     text-align: center;
     line-height: 1.5em;
 }
 
+p {
+    font-size: 1rem;
+    color: hsl(224, 23%, 55%);
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: .9rem;
+    color: hsl(223, 47%, 23%);
+}
+
 .card-header {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 .pricing {
@@ -89,6 +109,45 @@ img {
     border-radius: 20px;
 }
 
-/* .confirm button {
+.pricing a {
+    font: bolder .8rem 'Red Hat Display';
+}
+
+.pricing a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.625);
+}
+
+button {
+    font: bold .9rem 'Red Hat Display';
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+button.confirm {
     background-color: hsl(245, 75%, 52%);
-} */
+    color: #FFFFFF;
+    border-radius: 10px;
+    border-style: none;
+    padding: 1em;
+    box-shadow: 0 2em 1.8em -1em hsla(245, 75%, 52%, 0.4);
+}
+button.confirm:hover {
+    background-color: hsla(245, 75%, 52%, 0.625);
+    cursor: pointer;
+}
+
+button.cancel {
+    
+    align-self: center;
+    background: none;
+    border-style: none;
+    color: hsl(224, 23%, 55%);
+
+}
+button.cancel:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
