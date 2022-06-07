@@ -57,12 +57,10 @@ img {
     background-repeat: no-repeat; 
     background-size: contain;
     border-radius: 20px;
-    width: 80%;
     min-width: 22em;
     max-width: 22em;
     padding: 1.5em;
     box-shadow: 0 1em 2em -1.4em hsl(224, 23%, 55%);
-    /* min-height: 50%; */
 }
 
 .content-container {
@@ -155,5 +153,12 @@ button.cancel:hover {
 }
 
 @media only screen and (min-width: 1170px) {
+    .card {max-width: 27.5em;}
+    p {font-size: 1.1rem;}
     
+    h1 {font-size: 1.625rem;}
+    
+    h3 {font-size: 1rem;}
+    button {font-size: 1rem;}
+    .switch-plan {font-size: .9rem;}
 }
