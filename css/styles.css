@@ -107,6 +107,10 @@ h3 {
     border-radius: 20px;
 }
 
+.plan {
+    margin-left: .2em;
+}
+
 .switch-plan {
     font: bolder .8rem 'Red Hat Display';
     color: hsl(245, 75%, 52%);
